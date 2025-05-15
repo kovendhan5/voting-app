@@ -11,8 +11,6 @@ This application showcases a basic voting system where users can vote for one of
 
 ## Architecture
 
-![Architecture diagram](architecture.excalidraw.png)
-
 - A front-end web app in [Python](/vote) which lets you vote between two options
 - A [Redis](https://hub.docker.com/_/redis/) queue which collects new votes
 - A [.NET](/worker/) worker which consumes votes and stores them in…
