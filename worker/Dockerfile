@@ -26,3 +26,8 @@ FROM mcr.microsoft.com/dotnet/runtime:7.0
 WORKDIR /app
 COPY --from=build /app .
 ENTRYPOINT ["dotnet", "Worker.dll"]
+
+# CMD ["dotnet", "Worker.dll"]
+# CMD ["dotnet", "Worker.dll", "--urls", "http://
+# CMD ["dotnet", "Worker.dll", "--urls", "http://*:80"]
+# CMD ["dotnet", "Worker.dll", "--urls", "http://*:80", "--environment", "Development"]
