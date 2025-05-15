@@ -1,7 +1,6 @@
-version: '2'
+version: "2"
 
 services:
-
   sut:
     build: ./tests/
     depends_on:
@@ -60,3 +59,14 @@ volumes:
 networks:
   front-tier:
   back-tier:
+    driver: bridge
+  # driver_opts:
+  #   com.docker.network.bridge.name: "back-tier"
+  # driver: overlay
+  # attachable: true
+  # name: back-tier
+  # ipam:
+  #   config:
+  #   - subnet:
+  #       -
+  #         -
