@@ -9,7 +9,7 @@ services:
     image: dockersamples/examplevotingapp_vote
     depends_on:
       redis:
-        condition: service_healthy 
+        condition: service_healthy
     ports:
       - "8080:80"
     networks:
@@ -20,7 +20,7 @@ services:
     image: dockersamples/examplevotingapp_result
     depends_on:
       db:
-        condition: service_healthy 
+        condition: service_healthy
     ports:
       - "8081:80"
     networks:
@@ -31,9 +31,9 @@ services:
     image: dockersamples/examplevotingapp_worker
     depends_on:
       redis:
-        condition: service_healthy 
+        condition: service_healthy
       db:
-        condition: service_healthy 
+        condition: service_healthy
     networks:
       - back-tier
 
@@ -67,3 +67,9 @@ volumes:
 networks:
   front-tier:
   back-tier:
+# Compare this snippet from docker-compose.override.yml:
+# version: "3.8"
+# services:
+#   vote:
+#     ports:
+#       - "

@@ -11,3 +11,4 @@ params = ({ 'vote': 'a' })
 encoded = urllib.parse.urlencode(params)
 outfile.write(encoded)
 outfile.close()
+
