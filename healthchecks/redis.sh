@@ -8,3 +8,4 @@ if ping="$(redis-cli -h "$host" ping)" && [ "$ping" = 'PONG' ]; then
 fi
 
 exit 1
+
