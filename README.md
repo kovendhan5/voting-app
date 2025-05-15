@@ -1,15 +1,12 @@
-# Example Voting App
+# Voting App
 
 A simple distributed application running across multiple Docker containers that demonstrates a microservices architecture.
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/voting-app)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Overview
 
 This application showcases a basic voting system where users can vote for one of two options. The architecture demonstrates how multiple services can work together using different technologies.
 
-## Architecture
+## components
 
 - A front-end web app in [Python](/vote) which lets you vote between two options
 - A [Redis](https://hub.docker.com/_/redis/) queue which collects new votes
