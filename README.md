@@ -14,7 +14,7 @@ This application showcases a basic voting system where users can vote for one of
 - A [Postgres](https://hub.docker.com/_/postgres/) database backed by a Docker volume
 - A [Node.js](/result) web app which shows the results of the voting in real time
 
-## Prerequisites
+## Prerequirements
 
 Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. [Docker Compose](https://docs.docker.com/compose) will be automatically installed. On Linux, make sure you have the latest version of [Compose](https://docs.docker.com/compose/install/).
 
